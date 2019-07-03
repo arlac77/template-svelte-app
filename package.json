@@ -1,5 +1,6 @@
 {
   "name": "{{name}}",
+  "description": "{{description}}",
   "version": "0.0.0-semantic-release",
   "devDependencies": {
     "browser-sync": "^2.26.7",
@@ -21,7 +22,7 @@
     "@semantic-release/exec": "^3.3.5"
   },
   "scripts": {
-    "build": "rollup -c",
+    "prepare": "rollup -c",
     "start": "rollup -c -w"
   },
   "release": {
