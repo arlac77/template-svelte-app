@@ -19,7 +19,6 @@
     "npm-pkgbuild": "^6.5.5",
     "semantic-release": "^15.13.18",
     "@semantic-release/exec": "^3.3.5"
-
   },
   "scripts": {
     "build": "rollup -c",
@@ -35,6 +34,11 @@
           "publishCmd": "npx npm-pkgbuild --pkgver ${nextRelease.version} pkgbuild pacman makepkg"
         }
       ]
+    ]
+  },
+  "template": {
+    "usedBy": [
+      "arlac77/svelte-playground"
     ]
   }
 }
