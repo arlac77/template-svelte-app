@@ -38,7 +38,8 @@
   },
   "template": {
     "usedBy": [
-      "arlac77/svelte-playground"
+      "arlac77/svelte-playground",
+      "arlac77/system-dashboard-frontend"
     ]
   }
 }
