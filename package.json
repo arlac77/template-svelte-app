@@ -37,6 +37,24 @@
       ]
     ]
   },
+  "pacman": {
+    "groups": "{{group}}",
+    "install": "pacman/install.sh",
+    "installdir": "/services/{{name}}/frontend",
+    "properties": {
+      "urlPrefix": "/services/{{name}}/"
+    },
+    "content": {
+      "${installdir}/": {
+        "base": "public"
+      },
+      "/etc/nginx/config.d/${name}.conf": "pacman/nginx.conf"
+    },
+    "depends": {
+      "systemd": ">=241.0",
+      "nginx-mainline": ">=1.17.1"
+    }
+  },
   "template": {
     "usedBy": [
       "arlac77/svelte-playground",
