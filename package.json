@@ -51,7 +51,7 @@
       "/etc/nginx/config.d/${name}.conf": "pacman/nginx.conf"
     },
     "depends": {
-      "systemd": ">=241.0",
+      "systemd": ">=242.32",
       "nginx-mainline": ">=1.17.1"
     }
   },
