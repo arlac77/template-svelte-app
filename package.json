@@ -59,6 +59,18 @@
     "usedBy": [
       "arlac77/svelte-playground",
       "arlac77/system-dashboard-frontend"
+    ],
+    "files": [
+      {
+        "merger": "Readme",
+        "pattern": "README.md",
+        "options": {
+          "badges": [
+            {
+              "name": "Svelte v3",
+              "icon": "https://img.shields.io/badge/svelte-v2-orange.svg",
+              "url": "https://svelte.dev"
+            }]}}
     ]
   }
 }
