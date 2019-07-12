@@ -19,7 +19,7 @@
     "svelte": "^3.6.7",
     "svelte-easyroute-rollup": "^1.0.1",
     "svelte-preprocess": "^2.14.3",
-    "npm-pkgbuild": "^6.5.6",
+    "npm-pkgbuild": "^6.6.0",
     "semantic-release": "^15.13.19",
     "@semantic-release/exec": "^3.3.5"
   },
