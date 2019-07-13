@@ -1,7 +1,6 @@
 {
   "name": "{{name}}",
   "description": "{{description}}",
-  "base": "/services/{{name}}",
   "version": "0.0.0-semantic-release",
   "devDependencies": {
     "browser-sync": "^2.26.7",
@@ -39,13 +38,15 @@
       ]
     ]
   },
+  "config": {
+    "api" : "api",
+    "proxyTarget" : "https://somewhere/",
+    "urlPrefix": "/services/{{name}}/"
+  },
   "pacman": {
     "groups": "{{group}}",
     "install": "pacman/install.sh",
     "installdir": "/services/{{name}}/frontend",
-    "properties": {
-      "urlPrefix": "/services/{{name}}/"
-    },
     "content": {
       "${installdir}/": {
         "base": "public"
