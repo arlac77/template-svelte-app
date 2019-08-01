@@ -26,6 +26,9 @@
     "prepare": "rollup -c",
     "start": "rollup -c -w"
   },
+  "engines": {
+    "node": ">=10.16.1"
+  },
   "release": {
     "plugins": [
       "@semantic-release/commit-analyzer",
