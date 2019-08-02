@@ -15,7 +15,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-svelte": "^5.1.0",
     "rollup-plugin-terser": "^5.1.1",
-    "svelte": "^3.6.9",
+    "svelte": "^3.6.10",
     "svelte-easyroute-rollup": "^1.1.0",
     "svelte-preprocess": "^2.15.0",
     "npm-pkgbuild": "^6.8.1",
