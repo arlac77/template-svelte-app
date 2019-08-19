@@ -9,24 +9,24 @@
     "http-proxy-middleware": "^0.19.1",
     "postcss": "^7.0.17",
     "postcss-import": "^12.0.1",
-    "rollup": "^1.19.3",
+    "rollup": "^1.19.4",
     "rollup-plugin-commonjs": "^10.0.2",
     "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-svelte": "^5.1.0",
     "rollup-plugin-terser": "^5.1.1",
-    "svelte": "^3.7.1",
+    "svelte": "^3.8.1",
     "svelte-preprocess": "^2.15.0",
     "npm-pkgbuild": "^6.8.1",
-    "semantic-release": "^15.13.19",
-    "@semantic-release/exec": "^3.3.5"
+    "semantic-release": "^15.13.21",
+    "@semantic-release/exec": "^3.3.6"
   },
   "scripts": {
     "prepare": "rollup -c",
     "start": "rollup -c -w"
   },
   "engines": {
-    "node": ">=10.16.2"
+    "node": ">=10.16.3"
   },
   "release": {
     "plugins": [
@@ -57,7 +57,7 @@
     },
     "depends": {
       "systemd": ">=242.32",
-      "nginx-mainline": ">=1.17.1"
+      "nginx-mainline": ">=1.17.3"
     }
   },
   "template": {
