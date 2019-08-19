@@ -36,7 +36,7 @@ export default {
       css: css => css.write(`${dist}/bundle.css`)
     }),
 
-    resolve(),
+    resolve({ browser: true }),
     commonjs(),
     json({
       preferConst: true,
