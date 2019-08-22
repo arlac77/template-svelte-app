@@ -18,7 +18,7 @@
     "svelte": "^3.9.1",
     "svelte-preprocess": "^2.15.0",
     "npm-pkgbuild": "^6.9.0",
-    "semantic-release": "^15.13.23",
+    "semantic-release": "^15.13.24",
     "@semantic-release/exec": "^3.3.6"
   },
   "scripts": {
