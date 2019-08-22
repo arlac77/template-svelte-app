@@ -62,6 +62,7 @@
   },
   "template": {
     "usedBy": [
+      "arlac77/konsum-frontend-svelte",
       "arlac77/svelte-playground",
       "arlac77/system-dashboard-frontend"
     ],
