@@ -5,6 +5,7 @@ import json from "rollup-plugin-json";
 import { terser } from "rollup-plugin-terser";
 import autoPreprocess from "svelte-preprocess";
 import postcssImport from "postcss-import";
+import copy from 'rollup-plugin-copy';
 
 import history from "connect-history-api-fallback";
 import proxy from "http-proxy-middleware";
@@ -23,6 +24,11 @@ export default {
     file: `${dist}/bundle.mjs`
   },
   plugins: [
+    copy({
+      targets: [
+        { src: 'node_modules/mf-styling/global.css', dest: dist }
+      ]
+    }),
     svelte({
       dev: !production,
 
