@@ -30,7 +30,7 @@
     "start": "rollup -c -w"
   },
   "engines": {
-    "node": ">=12.9.0"
+    "node": ">=12.9.1"
   },
   "release": {
     "plugins": [
