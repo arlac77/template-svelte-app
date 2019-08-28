@@ -28,7 +28,7 @@
   },
   "scripts": {
     "prepare": "rollup -c",
-    "start": "light-server -s public --servePrefix /services/{{name}} --historyindex /services/{{name}}/index.html -p 5000 --proxypath /services/{{name}}/api -x https://mfelten.dynv6.net -w src/**,public/** # rollup -c"
+    "start": "light-server -s public --servePrefix {{urlPrefix}} --historyindex {{urlPrefix}}/index.html -p 5000 --proxypath {{api}} -x {{proxyTarget}} -w src/**,public/** # rollup -c"
   },
   "engines": {
     "node": ">=12.9.1"
