@@ -6,13 +6,15 @@
     "mf-styling": "git+https://github.com/arlac77/mf-styling.git"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "connect-history-api-fallback": "^1.6.0",
-    "express": "^4.17.1",
-    "http-proxy-middleware": "^0.19.1",
-    "postcss": "^7.0.17",
-    "postcss-import": "^12.0.1",
-    "rollup": "^1.20.2",
+    "browser-sync": "--delete--",
+    "connect-history-api-fallback": "--delete--",
+    "express": "--delete--",
+    "http-proxy-middleware": "--delete--",
+    "postcss": "--delete--",
+    "postcss-import": "--delete--",
+    "svelte-preprocess": "--delete--",
+    "light-server": "^2.6.3",
+    "rollup": "^1.20.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-copy": "^3.1.0",
     "rollup-plugin-json": "^4.0.0",
@@ -20,14 +22,13 @@
     "rollup-plugin-svelte": "^5.1.0",
     "rollup-plugin-terser": "^5.1.1",
     "svelte": "^3.9.1",
-    "svelte-preprocess": "^2.15.0",
     "npm-pkgbuild": "^6.9.0",
     "semantic-release": "^15.13.24",
     "@semantic-release/exec": "^3.3.6"
   },
   "scripts": {
     "prepare": "rollup -c",
-    "start": "rollup -c -w"
+    "start": "light-server -s public --servePrefix /services/{{name}} --historyindex /services/{{name}}/index.html -p 5000 --proxypath /services/{{name}}/api -x https://mfelten.dynv6.net -w src/**,public/** # rollup -c"
   },
   "engines": {
     "node": ">=12.9.1"
