@@ -15,7 +15,7 @@
     "rollup-plugin-svelte": "^5.1.0",
     "rollup-plugin-terser": "^5.1.1",
     "svelte": "^3.9.2",
-    "npm-pkgbuild": "^6.9.0",
+    "npm-pkgbuild": "^6.9.1",
     "semantic-release": "^15.13.24",
     "@semantic-release/exec": "^3.3.6"
   },
@@ -59,6 +59,7 @@
     }
   },
   "template": {
+    "inheritFrom": "arlac77/npm-package-template",
     "usedBy": [
       "arlac77/konsum-frontend-svelte",
       "arlac77/svelte-playground",
