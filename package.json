@@ -21,7 +21,7 @@
   },
   "scripts": {
     "prepare": "rollup -c",
-    "start": "light-server -s public --servePrefix {{urlPrefix}} --historyindex {{urlPrefix}}/index.html -p 5000 --proxypath {{api}} -x {{proxyTarget}} -w 'src/**,public/*.css # rollup -c'"
+    "start": "rollup -c -w"
   },
   "engines": {
     "node": ">=12.9.1"
@@ -39,7 +39,7 @@
     ]
   },
   "config": {
-    "api": "api",
+    "api": "/services/{{name}}/api",
     "proxyTarget": "https://somewhere/",
     "urlPrefix": "/services/{{name}}/"
   },
