@@ -24,7 +24,7 @@
     "start": "rollup -c -w"
   },
   "engines": {
-    "node": ">=12.9.1"
+    "node": ">=12.10.0"
   },
   "release": {
     "plugins": [
