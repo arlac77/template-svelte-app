@@ -3,10 +3,10 @@
   "description": "{{description}}",
   "version": "0.0.0-semantic-release",
   "dependencies": {
-    "mf-styling": "git+https://github.com/arlac77/mf-styling.git"
+    "mf-styling": "arlac77/mf-styling"
   },
   "devDependencies": {
-    "light-server": "git+https://github.com/arlac77/light-server.git",
+    "light-server": "arlac77/light-server",
     "rollup": "^1.20.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-copy": "^3.1.0",
