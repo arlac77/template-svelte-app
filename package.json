@@ -6,7 +6,7 @@
     "mf-styling": "arlac77/mf-styling"
   },
   "devDependencies": {
-    "light-server": "arlac77/light-server",
+    "light-server": "^2.6.4",
     "rollup": "^1.21.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-copy": "^3.1.0",
