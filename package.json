@@ -6,7 +6,6 @@
     "mf-styling": "arlac77/mf-styling"
   },
   "devDependencies": {
-    "light-server": "--delete--",
     "rollup": "^1.21.4",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-copy": "^3.1.0",
@@ -66,7 +65,7 @@
       "arlac77/hook-ci-fronend-svelte",
       "arlac77/system-dashboard-frontend"
     ],
-    "_files": [
+    "files": [
       {
         "merger": "Readme",
         "pattern": "README.md",
@@ -74,7 +73,7 @@
           "badges": [
             {
               "name": "Svelte v3",
-              "icon": "https://img.shields.io/badge/svelte-v2-orange.svg",
+              "icon": "https://img.shields.io/badge/svelte-v3-orange.svg",
               "url": "https://svelte.dev"
             }
           ]
