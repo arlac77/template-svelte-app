@@ -62,7 +62,7 @@
     "inheritFrom": "arlac77/npm-package-template",
     "usedBy": [
       "arlac77/konsum-frontend-svelte",
-      "arlac77/hook-ci-fronend-svelte",
+      "arlac77/hook-ci-frontend-svelte",
       "arlac77/system-dashboard-frontend"
     ],
     "files": [
