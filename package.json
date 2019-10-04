@@ -39,9 +39,10 @@
     ]
   },
   "config": {
+    "base": "/services/{{name}}/",
     "api": "/services/{{name}}/api",
     "proxyTarget": "https://somewhere/",
-    "urlPrefix": "/services/{{name}}/"
+    "urlPrefix": "--delete--"
   },
   "pacman": {
     "groups": "{{group}}",
