@@ -1,0 +1,10 @@
+{
+  "name": "{{name}}",
+  "description": "{{description}}",
+  "icons": [
+    {
+      "src": "facicon.ico",
+      "sizes": "16x16"
+    }
+  ]
+}
