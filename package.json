@@ -5,6 +5,7 @@
   "dependencies": {
     "mf-styling": "arlac77/mf-styling"
   },
+  "license": "BSD-2-Clause",
   "devDependencies": {
     "rollup": "^1.25.2",
     "rollup-plugin-commonjs": "^10.1.0",
