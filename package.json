@@ -18,7 +18,7 @@
     "svelte": "^3.12.1",
     "npm-pkgbuild": "^6.10.2",
     "semantic-release": "^15.13.28",
-    "@semantic-release/exec": "^3.3.7"
+    "@semantic-release/exec": "^3.3.8"
   },
   "scripts": {
     "prepare": "rollup -c",
