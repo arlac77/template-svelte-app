@@ -16,7 +16,7 @@
     "rollup-plugin-svelte": "^5.1.0",
     "rollup-plugin-terser": "^5.1.2",
     "svelte": "^3.12.1",
-    "npm-pkgbuild": "^6.10.3",
+    "npm-pkgbuild": "^6.10.4",
     "semantic-release": "^15.13.28",
     "@semantic-release/exec": "^3.3.8"
   },
