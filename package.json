@@ -46,7 +46,7 @@
   },
   "pacman": {
     "groups": "{{group}}",
-    "hooks": "pacman/install.sh",
+    "hooks": "pacman/hooks.sh",
     "installdir": "/services/{{name}}/frontend",
     "content": {
       "${installdir}/": {
