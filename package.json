@@ -72,7 +72,6 @@
     "files": [
       {
         "merger": "Readme",
-        "pattern": "README.md",
         "options": {
           "badges": [
             {
