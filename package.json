@@ -9,7 +9,7 @@
   "devDependencies": {
     "rollup-plugin-json": "--delete--",
 
-    "rollup": "^1.27.0",
+    "rollup": "^1.27.1",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-copy": "^3.1.0",
     "rollup-plugin-dev": "^1.1.0",
@@ -19,7 +19,7 @@
     "rollup-plugin-terser": "^5.1.2",
     "svelte": "^3.14.1",
     "npm-pkgbuild": "^6.10.8",
-    "semantic-release": "^15.13.30",
+    "semantic-release": "^15.13.31",
     "@semantic-release/exec": "^3.3.8"
   },
   "scripts": {
