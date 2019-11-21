@@ -7,8 +7,6 @@
   },
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "rollup-plugin-json": "--delete--",
-
     "rollup": "^1.27.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-copy": "^3.1.0",
@@ -17,7 +15,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-svelte": "^5.1.1",
     "rollup-plugin-terser": "^5.1.2",
-    "svelte": "^3.14.1",
+    "svelte": "^3.15.0",
     "npm-pkgbuild": "^6.10.10",
     "semantic-release": "^15.13.31",
     "@semantic-release/exec": "^3.3.8"
@@ -57,7 +55,7 @@
       "/etc/nginx/config.d/${name}.conf": "pacman/nginx.conf"
     },
     "depends": {
-      "systemd": ">=243.78",
+      "systemd": ">=243.162",
       "nginx-mainline": ">=1.17.4"
     }
   },
