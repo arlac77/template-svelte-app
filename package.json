@@ -77,9 +77,22 @@
               "name": "Svelte v3",
               "icon": "https://img.shields.io/badge/svelte-v3-orange.svg",
               "url": "https://svelte.dev"
+            },
+            {
+              "name": "Build Status",
+              "icon": "https://secure.travis-ci.org/{{github.user}}/{{github.repo}}.png",
+              "url": "http://travis-ci.org/{{github.user}}/{{github.repo}}"
             }
           ]
         }
+      },
+      {
+        "merger": "Travis",
+        "pattern": ".travis.yml"
+      },
+      {
+        "merger": "Rollup",
+        "pattern": "**/rollup.config.js"
       }
     ]
   }
