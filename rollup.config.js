@@ -4,6 +4,7 @@ import commonjs from "rollup-plugin-commonjs";
 import { terser } from "rollup-plugin-terser";
 import dev from "rollup-plugin-dev";
 import copy from "rollup-plugin-copy";
+import consts from 'rollup-plugin-consts';
 import { config } from "./package.json";
 
 const production = !process.env.ROLLUP_WATCH;
