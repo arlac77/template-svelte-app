@@ -1,7 +1,6 @@
 import svelte from "rollup-plugin-svelte";
 import resolve from "rollup-plugin-node-resolve";
 import commonjs from "rollup-plugin-commonjs";
-import json from "@rollup/plugin-json";
 import { terser } from "rollup-plugin-terser";
 import dev from "rollup-plugin-dev";
 import copy from "rollup-plugin-copy";
@@ -19,6 +18,13 @@ export default {
     file: `${dist}/bundle.mjs`
   },
   plugins: [
+    consts({
+      name,
+      version,
+      description,
+      api: config.api,
+      base: config.base
+    }),
     copy({
       targets: [
         { src: 'node_modules/mf-styling/global.css', dest: dist }
@@ -33,10 +39,6 @@ export default {
 
     resolve({ browser: true }),
     commonjs(),
-    json({
-      preferConst: true,
-      compact: true
-    }),
     production && terser(),
     dev({
       port,
