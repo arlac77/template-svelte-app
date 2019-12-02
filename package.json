@@ -9,7 +9,7 @@
   "devDependencies": {
     "@rollup/plugin-json": "--delete--",
 
-    "rollup": "^1.27.7",
+    "rollup": "^1.27.8",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-copy": "^3.1.0",
     "rollup-plugin-dev": "^1.1.1",
