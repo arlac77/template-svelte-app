@@ -5,7 +5,7 @@ import { terser } from "rollup-plugin-terser";
 import dev from "rollup-plugin-dev";
 import copy from "rollup-plugin-copy";
 import consts from 'rollup-plugin-consts';
-import { config } from "./package.json";
+import { name, description, version, config } from "./package.json";
 
 const production = !process.env.ROLLUP_WATCH;
 const dist = "public";
@@ -23,8 +23,7 @@ export default {
       name,
       version,
       description,
-      api: config.api,
-      base: config.base
+      ...config
     }),
     copy({
       targets: [
@@ -37,7 +36,6 @@ export default {
 				css.write(`${dist}/bundle.css`);
 			}
     }),
-
     resolve({ browser: true }),
     commonjs(),
     production && terser(),
