@@ -8,13 +8,14 @@
   "license": "BSD-2-Clause",
   "devDependencies": {
     "@rollup/plugin-json": "--delete--",
+    "rollup-plugin-node-resolve": "--delete--",
 
     "rollup": "^1.27.8",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-copy": "^3.1.0",
     "rollup-plugin-dev": "^1.1.1",
     "rollup-plugin-consts": "^1.0.1",
-    "rollup-plugin-node-resolve": "^5.2.0",
+    "@rollup/plugin-node-resolve": "^6.0.0",
     "rollup-plugin-svelte": "^5.1.1",
     "rollup-plugin-terser": "^5.1.2",
     "svelte": "^3.15.0",
