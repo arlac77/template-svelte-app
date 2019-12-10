@@ -5,7 +5,8 @@ import commonjs from "rollup-plugin-commonjs";
 import { terser } from "rollup-plugin-terser";
 import dev from "rollup-plugin-dev";
 import copy from "rollup-plugin-copy";
-import consts from 'rollup-plugin-consts';
+import consts from "rollup-plugin-consts";
+import acornClassFields from "acorn-class-fields";
 import { name, description, version, config } from "./package.json";
 
 const production = !process.env.ROLLUP_WATCH;
@@ -27,15 +28,13 @@ export default {
       ...config
     }),
     copy({
-      targets: [
-        { src: 'node_modules/mf-styling/global.css', dest: dist }
-      ]
+      targets: [{ src: "node_modules/mf-styling/global.css", dest: dist }]
     }),
     svelte({
       dev: !production,
       css: css => {
-				css.write(`${dist}/bundle.css`);
-			}
+        css.write(`${dist}/bundle.css`);
+      }
     }),
     resolve({ browser: true }),
     commonjs(),
@@ -48,6 +47,7 @@ export default {
       proxy: { [`${config.api}/*`]: [config.proxyTarget, { https: true }] }
     })
   ],
+  acornInjectPlugins: [acornClassFields],
   watch: {
     clearScreen: false
   }
