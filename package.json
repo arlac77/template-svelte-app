@@ -7,6 +7,8 @@
   },
   "license": "BSD-2-Clause",
   "devDependencies": {
+    "acorn-class-fields": "--delete--",
+
     "rollup": "^1.27.9",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-copy": "^3.1.0",
@@ -18,8 +20,7 @@
     "svelte": "^3.16.3",
     "npm-pkgbuild": "^6.10.14",
     "semantic-release": "^15.13.31",
-    "@semantic-release/exec": "^3.3.8",
-    "acorn-class-fields": "https://github.com/arlac77/acorn-class-fields.git"
+    "@semantic-release/exec": "^3.3.8"
   },
   "scripts": {
     "prepare": "rollup -c",
