@@ -9,7 +9,7 @@
   "devDependencies": {
     "acorn-class-fields": "--delete--",
 
-    "rollup": "^1.27.9",
+    "rollup": "1.27.10",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-copy": "^3.1.0",
     "rollup-plugin-dev": "^1.1.1",
