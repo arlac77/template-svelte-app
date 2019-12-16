@@ -3,12 +3,13 @@
   "description": "{{description}}",
   "version": "0.0.0-semantic-release",
   "dependencies": {
-    "mf-styling": "arlac77/mf-styling"
+    "mf-styling": "arlac77/mf-styling",
+    "svelte-common": "^1.1.2",
+    "svelte-guard-history-router": "^1.1.9",
+    "svelte-session-manager": "^1.0.3"
   },
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "acorn-class-fields": "--delete--",
-
     "rollup": "^1.27.13",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-copy": "^3.1.0",
