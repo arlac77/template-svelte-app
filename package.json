@@ -10,7 +10,6 @@
   },
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "npm-gkpbuild": "--delete--",
     "rollup-plugin-commonjs": "--delete--",
 
     "rollup": "^1.27.14",
