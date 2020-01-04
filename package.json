@@ -12,7 +12,7 @@
   "devDependencies": {
     "rollup-plugin-commonjs": "--delete--",
 
-    "rollup": "^1.27.14",
+    "rollup": "^1.28.0",
     "rollup-plugin-copy": "^3.1.0",
     "rollup-plugin-dev": "^1.1.1",
     "rollup-plugin-consts": "^1.0.1",
