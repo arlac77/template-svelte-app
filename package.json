@@ -11,7 +11,6 @@
   "license": "BSD-2-Clause",
   "devDependencies": {
     "rollup-plugin-commonjs": "--delete--",
-
     "rollup": "^1.28.0",
     "rollup-plugin-copy": "^3.1.0",
     "rollup-plugin-dev": "^1.1.1",
@@ -65,7 +64,10 @@
     }
   },
   "template": {
-    "inheritFrom": "arlac77/npm-package-template",
+    "inheritFrom": [
+      "arlac77/npm-package-template",
+      "arlac77/npm-package-template-travis"
+    ],
     "usedBy": [
       "arlac77/entitlement-provider-frontend",
       "arlac77/hook-ci-frontend-svelte",
@@ -82,18 +84,9 @@
               "name": "Svelte v3",
               "icon": "https://img.shields.io/badge/svelte-v3-orange.svg",
               "url": "https://svelte.dev"
-            },
-            {
-              "name": "Build Status",
-              "icon": "https://secure.travis-ci.org/{{github.user}}/{{github.repo}}.png",
-              "url": "http://travis-ci.org/{{github.user}}/{{github.repo}}"
             }
           ]
         }
-      },
-      {
-        "merger": "Travis",
-        "pattern": ".travis.yml"
       },
       {
         "merger": "Rollup",
