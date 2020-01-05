@@ -4,8 +4,8 @@
   "version": "0.0.0-semantic-release",
   "dependencies": {
     "mf-styling": "arlac77/mf-styling",
-    "svelte-common": "^1.1.2",
-    "svelte-guard-history-router": "^1.1.9",
+    "svelte-common": "^1.2.0",
+    "svelte-guard-history-router": "^1.1.10",
     "svelte-session-manager": "^1.0.4"
   },
   "license": "BSD-2-Clause",
