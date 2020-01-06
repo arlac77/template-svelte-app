@@ -65,7 +65,8 @@
   "template": {
     "inheritFrom": [
       "arlac77/npm-package-template",
-      "arlac77/npm-package-template-travis"
+      "arlac77/npm-package-template-travis",
+      "arlac77/npm-package-template-rollup"
     ],
     "usedBy": [
       "arlac77/entitlement-provider-frontend",
@@ -86,10 +87,6 @@
             }
           ]
         }
-      },
-      {
-        "merger": "Rollup",
-        "pattern": "**/rollup.config.js"
       }
     ]
   }
