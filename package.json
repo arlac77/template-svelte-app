@@ -38,15 +38,8 @@
     "groups": "{{group}}",
     "hooks": "pacman/hooks.sh",
     "installdir": "/services/{{name}}/frontend",
-    "content": {
-      "${installdir}/": {
-        "base": "public"
-      },
-      "/etc/nginx/config.d/${name}.conf": "pacman/nginx.conf"
-    },
     "depends": {
-      "systemd": ">=244.1",
-      "nginx-mainline": ">=1.17.7"
+      "systemd": ">=244.1"
     }
   },
   "template": {
@@ -54,6 +47,7 @@
       "arlac77/npm-package-template-root",
       "arlac77/npm-package-template-travis",
       "arlac77/npm-package-template-rollup",
+      "arlac77/npm-package-template-nginx",
       "arlac77/npm-package-template-pacman"
     ],
     "usedBy": [
