@@ -10,8 +10,7 @@
     "rollup-plugin-dev": "^1.1.1",
     "rollup-plugin-svelte": "^5.1.1",
     "rollup-plugin-terser": "^5.1.3",
-    "svelte": "^3.16.7",
-    "semantic-release": "^15.14.0"
+    "svelte": "^3.16.7"
   },
   "scripts": {
     "prepare": "rollup -c",
@@ -48,7 +47,8 @@
       "arlac77/npm-package-template-travis",
       "arlac77/npm-package-template-rollup",
       "arlac77/npm-package-template-nginx",
-      "arlac77/npm-package-template-pacman"
+      "arlac77/npm-package-template-pacman",
+      "arlac77/npm-package-template-release"
     ],
     "usedBy": [
       "arlac77/entitlement-provider-frontend",
