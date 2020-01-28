@@ -10,7 +10,7 @@
     "rollup-plugin-dev": "^1.1.1",
     "rollup-plugin-svelte": "^5.1.1",
     "rollup-plugin-terser": "^5.2.0",
-    "svelte": "^3.17.3"
+    "svelte": "^3.18.1"
   },
   "scripts": {
     "prepare": "rollup -c",
