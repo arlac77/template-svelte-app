@@ -1,4 +1,7 @@
 {
+  "keywords": [
+    "svelte"
+  ],
   "dependencies": {
     "mf-styling": "arlac77/mf-styling",
     "svelte-common": "^1.3.0",
