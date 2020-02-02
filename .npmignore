@@ -1,3 +1,4 @@
+- .nyc_output
 build
 tests
 doc
@@ -8,4 +9,3 @@ doc
 .npmrc
 .travis.yml
 .vscode
-.nyc_output
