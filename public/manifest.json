@@ -1,5 +1,4 @@
 {
-  "manifest_version": 2,
   "name": "{{name}}",
   "description": "{{description}}",
   "icons": [
