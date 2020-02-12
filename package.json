@@ -20,7 +20,7 @@
     "start": "rollup -c -w"
   },
   "engines": {
-   "node": ">=13.8.0"
+    "node": ">=13.8.0"
   },
   "release": {
     "plugins": [
@@ -68,11 +68,13 @@
             {
               "name": "Svelte v3",
               "icon": "https://img.shields.io/badge/svelte-v3-orange.svg",
-              "url": "https://svelte.dev"
+              "url": "https://svelte.dev",
+              "order": 0.05
             }
           ]
         }
-      },{
+      },
+      {
         "merger": "JSONMerger",
         "pattern": "manifest.json"
       }
