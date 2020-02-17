@@ -42,7 +42,7 @@
     "hooks": "pacman/hooks.sh",
     "installdir": "/services/{{name}}/frontend",
     "depends": {
-      "systemd": ">=244.2"
+      "systemd": ">=244.3"
     }
   },
   "template": {
