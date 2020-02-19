@@ -59,6 +59,9 @@
       "arlac77/konsum-frontend-svelte",
       "arlac77/system-dashboard-frontend"
     ],
+    "properties": {
+      "node_version" : "13.9.0"
+    },
     "files": [
       {
         "merger": "Readme",
