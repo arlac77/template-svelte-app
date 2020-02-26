@@ -13,14 +13,14 @@
     "rollup-plugin-dev": "^1.1.1",
     "rollup-plugin-svelte": "^5.1.1",
     "rollup-plugin-terser": "^5.2.0",
-    "svelte": "^3.19.0"
+    "svelte": "^3.19.1"
   },
   "scripts": {
     "prepare": "rollup -c",
     "start": "rollup -c -w"
   },
   "engines": {
-    "node": ">=13.8.0"
+    "node": ">=13.9.0"
   },
   "release": {
     "plugins": [
