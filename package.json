@@ -76,7 +76,10 @@
       },
       {
         "merger": "JSONMerger",
-        "pattern": "**/manifest.json"
+        "pattern": "**/manifest.json",
+        "options": {
+          "expand" : false
+        }
       }
     ]
   }
