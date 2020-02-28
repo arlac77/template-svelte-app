@@ -20,8 +20,8 @@
   },
   "template": {
     "inheritFrom": [
-      "arlac77/npm-package-template-web-app",
-      "arlac77/npm-package-template-rollup"
+      "arlac77/template-web-app",
+      "arlac77/template-rollup"
     ],
     "usedBy": [
       "arlac77/entitlement-provider-frontend",
@@ -29,9 +29,9 @@
       "arlac77/konsum-frontend-svelte",
       "arlac77/system-dashboard-frontend"
     ],
-    "files": [
+    "mergers": [
       {
-        "merger": "Readme",
+        "type": "Readme",
         "pattern": "README.md",
         "options": {
           "badges": [
