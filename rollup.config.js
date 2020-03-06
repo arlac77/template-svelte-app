@@ -17,7 +17,8 @@ export default {
   output: {
     sourcemap: true,
     format: "esm",
-    file: `${dist}/bundle.mjs`
+    file: `${dist}/bundle.mjs`,
+    plugins: [production && terser()]
   },
   plugins: [
     consts({
@@ -37,7 +38,6 @@ export default {
     }),
     resolve({ browser: true }),
     commonjs(),
-    production && terser(),
     dev({
       port,
       dirs: [dist],
