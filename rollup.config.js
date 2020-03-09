@@ -1,10 +1,12 @@
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 
+import postcss from 'rollup-plugin-postcss'
+import postcssImport from 'postcss-import';
+
 import svelte from "rollup-plugin-svelte";
 import { terser } from "rollup-plugin-terser";
 import dev from "rollup-plugin-dev";
-import copy from "rollup-plugin-copy";
 import consts from "rollup-plugin-consts";
 import { name, description, version, config } from "./package.json";
 
@@ -27,13 +29,14 @@ export default {
       description,
       ...config
     }),
-    copy({
-      targets: [{ src: "node_modules/mf-styling/global.css", dest: dist }]
+    postcss({
+      extract: true,
+      plugins: [postcssImport]
     }),
     svelte({
       dev: !production,
       css: css => {
-        css.write(`${dist}/bundle.css`);
+        css.write(`${dist}/bundle.svelte.css`);
       }
     }),
     resolve({ browser: true }),
