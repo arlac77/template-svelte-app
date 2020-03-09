@@ -8,8 +8,6 @@
     "svelte-session-manager": "^1.0.7"
   },
   "devDependencies": {
-    "rollup-plugin-copy": "--delete--",
-
     "rollup-plugin-postcss": "^2.4.0",
     "postcss-import": "^12.0.1",
 
