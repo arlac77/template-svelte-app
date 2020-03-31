@@ -12,7 +12,7 @@
     "postcss-import": "^12.0.1",
 
     "rollup-plugin-dev": "^1.1.1",
-    "rollup-plugin-svelte": "^5.1.1",
+    "rollup-plugin-svelte": "^5.2.0",
     "rollup-plugin-terser": "^5.3.0",
     "svelte": "^3.20.1"
   },
