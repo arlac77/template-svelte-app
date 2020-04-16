@@ -3,12 +3,12 @@
     "svelte"
   ],
   "dependencies": {
-    "svelte-common": "^2.0.0",
-    "svelte-guard-history-router": "^1.1.16",
-    "svelte-session-manager": "^1.0.9"
+    "svelte-common": "^2.0.2",
+    "svelte-guard-history-router": "^1.1.17",
+    "svelte-session-manager": "^1.0.10"
   },
   "devDependencies": {
-    "rollup-plugin-postcss": "^2.6.2",
+    "rollup-plugin-postcss": "^2.6.4",
     "postcss-import": "^12.0.1",
     "rollup-plugin-dev": "^1.1.1",
     "rollup-plugin-svelte": "^5.2.1",
