@@ -44,7 +44,9 @@ export default () => {
         dev: !production,
         css: css => css.write(`${dist}/bundle.svelte.css`)
       }),
-      resolve({ browser: true }),
+      resolve({
+        browser: true,
+        dedupe: importee => importee === 'svelte' || importee.startsWith('svelte/') }),
       commonjs(),
       dev({
         port,
