@@ -17,6 +17,10 @@
     "prepare": "rollup -c",
     "start": "rollup -c -w"
   },
+  "config": {
+    "api": "/services/{{name}}/api",
+    "proxyTarget": "https://somewhere/"
+  },
   "template": {
     "inheritFrom": [
       "arlac77/template-web-app",
