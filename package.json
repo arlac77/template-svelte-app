@@ -19,7 +19,7 @@
   "template": {
     "inheritFrom": [
       "arlac77/template-web-app",
-      "arlac77/template-rollup"
+      "arlac77/template-svelte"
     ],
     "usedBy": [
       "arlac77/SymatemExplorer",
