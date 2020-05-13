@@ -1,7 +1,4 @@
 {
-  "keywords": [
-    "svelte"
-  ],
   "dependencies": {
     "svelte-common": "^2.0.3",
     "svelte-guard-history-router": "^1.1.18",
@@ -9,9 +6,7 @@
   },
   "devDependencies": {
     "rollup-plugin-postcss": "^3.1.1",
-    "postcss-import": "^12.0.1",
-    "rollup-plugin-svelte": "^5.2.1",
-    "svelte": "^3.22.2"
+    "postcss-import": "^12.0.1"
   },
   "scripts": {
     "prepare": "rollup -c",
@@ -33,22 +28,6 @@
       "arlac77/konsum-frontend-svelte",
       "arlac77/symatemexplorer",
       "arlac77/system-dashboard-frontend"
-    ],
-    "mergers": [
-      {
-        "type": "Readme",
-        "pattern": "README.md",
-        "options": {
-          "badges": [
-            {
-              "name": "Svelte v3",
-              "icon": "https://img.shields.io/badge/svelte-v3-orange.svg",
-              "url": "https://svelte.dev",
-              "order": 0.05
-            }
-          ]
-        }
-      }
     ]
   }
 }
