@@ -6,7 +6,7 @@ import svelte from "rollup-plugin-svelte";
 import postcss from "rollup-plugin-postcss";
 import postcssImport from "postcss-import";
 
-import terser from "rollup-plugin-terser";
+import { terser } from "rollup-plugin-terser";
 import dev from "rollup-plugin-dev";
 import consts from "rollup-plugin-consts";
 
@@ -25,7 +25,7 @@ export default () => {
       sourcemap: true,
       format: "esm",
       file: `${dist}/bundle.mjs`,
-      plugins: [production && terser.terser()]
+      plugins: [production && terser()]
     },
     plugins: [
       consts({
@@ -44,7 +44,7 @@ export default () => {
         dev: !production,
         css: css => css.write(`${dist}/bundle.svelte.css`)
       }),
-      resolve({
+      resolve.nodeResolve({
         browser: true,
         dedupe: importee =>
           importee === "svelte" || importee.startsWith("svelte/")
