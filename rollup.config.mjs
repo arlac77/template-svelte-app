@@ -35,7 +35,7 @@ export default () => {
         'node-fetch': `export default fetch`
       }),
       inject({
-        //Buffer: ['buffer', 'Buffer']
+        Buffer: ['buffer', 'Buffer']
       }),
       consts({
         name,
