@@ -1213,9 +1213,9 @@ svelte-common@^2.1.5:
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.1.5.tgz#e416c72886578c880b71ea418583776bb9794781"
 
-svelte-guard-history-router@^2.23.8:
-  version "2.23.8"
-  resolved "https://registry.yarnpkg.com/svelte-guard-history-router/-/svelte-guard-history-router-2.23.8.tgz#f2321daa36b21db461a71f486f6e8c86bed8dcf4"
+svelte-guard-history-router@^2.23.9:
+  version "2.23.9"
+  resolved "https://registry.yarnpkg.com/svelte-guard-history-router/-/svelte-guard-history-router-2.23.9.tgz#8425822a171ce363d0ab8a366959c4f98eb5cf4a"
   dependencies:
     multi-path-matcher "^2.1.2"
 
