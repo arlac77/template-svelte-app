@@ -48,7 +48,7 @@ export default () => {
       }),
       svelte({
         dev: !production,
-        css: css => css.write(`${dist}/bundle.svelte.css`)
+        emitCss: true
       }),
       resolve({
         browser: true,
