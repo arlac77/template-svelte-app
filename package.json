@@ -5,7 +5,7 @@
     "svelte-session-manager": "^1.1.7"
   },
   "devDependencies": {
-    "rollup-plugin-postcss": "^3.1.6",
+    "rollup-plugin-postcss": "^3.1.8",
     "postcss-import": "^12.0.1"
   },
   "scripts": {
@@ -28,7 +28,6 @@
       "arlac77/hook-ci-frontend-svelte",
       "arlac77/konsum-frontend-svelte",
       "arlac77/npm-navigator",
-      "arlac77/symatemexplorer",
       "arlac77/system-dashboard-frontend"
     ]
   }
