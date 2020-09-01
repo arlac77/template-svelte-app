@@ -17,6 +17,9 @@
     "proxyTarget": "https://somewhere/"
   },
   "template": {
+    "properties": {
+      "rollup": { "config": "" }
+    },
     "inheritFrom": [
       "arlac77/template-web-app",
       "arlac77/template-svelte"
