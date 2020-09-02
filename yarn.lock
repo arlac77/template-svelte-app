@@ -1209,9 +1209,9 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-svelte-common@^2.1.6:
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.1.6.tgz#687b0b8efbcd7306cfbbc155e1fc8325bf51dc03"
+svelte-common@^2.1.7:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.1.7.tgz#ae48ddd75f2ae0f5446c80303cbde6d2043c0432"
 
 svelte-guard-history-router@^2.24.0:
   version "2.24.0"
