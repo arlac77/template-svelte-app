@@ -13,33 +13,49 @@ import consts from "rollup-plugin-consts";
 
 const production = !process.env.ROLLUP_WATCH;
 const dist = "public";
+const bundlePrefix = `${dist}/bundle.`;
 const port = 5000;
 
-export default () => {
-  const { name, description, version, config } = JSON.parse(
-    readFileSync("./package.json", { endoding: "utf8" })
-  );
+const { name, description, version, config } = JSON.parse(
+  readFileSync("./package.json", { endoding: "utf8" })
+);
 
-  return {
+const external = [];
+
+const prePlugins = [
+  virtual({
+    "node-fetch": "export default fetch",
+    stream: "export class Readable {}"
+  }),
+  consts({
+    name,
+    version,
+    description,
+    ...config
+  })
+];
+
+const resolverPlugins = [
+  resolve({
+    browser: true,
+    preferBuiltins: false,
+    dedupe: importee => importee === "svelte" || importee.startsWith("svelte/")
+  }),
+  commonjs()
+];
+
+export default [
+  {
     input: "src/main.mjs",
     output: {
       interop: false,
       sourcemap: true,
       format: "esm",
-      file: `${dist}/bundle.mjs`,
+      file: `${bundlePrefix}main.mjs`,
       plugins: [production && terser()]
     },
     plugins: [
-      virtual({
-        "node-fetch": "export default fetch",
-        stream: "export class Readable {}"
-      }),
-      consts({
-        name,
-        version,
-        description,
-        ...config
-      }),
+      ...prePlugins,
       postcss({
         extract: true,
         sourceMap: true,
@@ -50,24 +66,32 @@ export default () => {
         dev: !production,
         emitCss: true
       }),
-      resolve({
-        browser: true,
-        preferBuiltins: false,
-        dedupe: importee =>
-          importee === "svelte" || importee.startsWith("svelte/")
-      }),
-      commonjs(),
+      ...resolverPlugins,
       !production &&
         dev({
           port,
           dirs: [dist],
           spa: `${dist}/index.html`,
           basePath: config.base,
-          proxy: { [`${config.api}/*`]: [config.proxyTarget, { https: true }] }
+          proxy: {
+            [`${config.api}/*`]: [config.proxyTarget, { https: true }]
+          }
         })
     ],
+    external,
     watch: {
       clearScreen: false
     }
-  };
-};
+  },
+  {
+    input: "src/service-worker.mjs",
+    output: {
+      interop: false,
+      sourcemap: true,
+      format: "esm",
+      file: `${bundlePrefix}service-worker.mjs`,
+      plugins: [production && terser()]
+    },
+    plugins: [...prePlugins, ...resolverPlugins].external
+  }
+];
