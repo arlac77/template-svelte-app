@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "svelte-common": "^2.11.1",
-    "svelte-guard-history-router": "^2.24.3",
+    "svelte-common": "^2.14.1",
+    "svelte-guard-history-router": "^2.25.0",
     "svelte-session-manager": "^1.1.7"
   },
   "devDependencies": {
@@ -14,7 +14,8 @@
   },
   "config": {
     "api": "/services/{{name}}/api",
-    "proxyTarget": "https://somewhere/"
+    "proxyTarget": "https://somewhere/",
+    "title": "Appliction Name"
   },
   "template": {
     "properties": {
