@@ -20,7 +20,9 @@
   },
   "template": {
     "properties": {
-      "rollup": { "config": "" }
+      "rollup": {
+        "config": ""
+      }
     },
     "inheritFrom": [
       "arlac77/template-web-app",
