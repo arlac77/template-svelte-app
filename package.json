@@ -22,6 +22,9 @@
     "properties": {
       "rollup": {
         "config": ""
+      },
+      "netlify": {
+        "publish": "publish/"
       }
     },
     "inheritFrom": [
