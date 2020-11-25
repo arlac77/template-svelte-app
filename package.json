@@ -1,8 +1,8 @@
 {
   "dependencies": {
     "svelte-common": "^2.19.0",
-    "svelte-guard-history-router": "^4.1.0",
-    "svelte-session-manager": "^1.1.10"
+    "svelte-guard-history-router": "^4.2.0",
+    "svelte-session-manager": "^1.2.0"
   },
   "devDependencies": {
     "rollup-plugin-postcss": "^3.1.8",
