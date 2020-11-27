@@ -56,6 +56,7 @@ const output = {
 export default [
   {
     input: "src/main.mjs",
+    treeshake: production,
     output,
     plugins: [
       ...prePlugins,
