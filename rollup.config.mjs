@@ -88,7 +88,7 @@ export default [
     }
   },
   {
-    input: "src/service-worker.mjs",
+    input: "src/service-worker/main.mjs",
     output: {
       ...output,
       file: `${bundlePrefix}service-worker.mjs`,
