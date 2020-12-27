@@ -80,7 +80,7 @@ export default [
           spa: `${dist}/index.html`,
           basePath: config.base,
           proxy: {
-            [`${config.api}/*`]: [config.proxyTarget, { https: true }]
+            [`${config.api}/*`]: [config.proxyTarget, { https: config.proxyTarget.startsWith("https:") }]
           }
         })
     ],
