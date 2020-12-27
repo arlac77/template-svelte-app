@@ -67,7 +67,9 @@ export default [
         plugins: [postcssImport]
       }),
       svelte({
-        dev: !production
+        compilerOptions: {
+          dev: !production
+        }
       }),
       ...resolverPlugins,
       !production && livereload(dist),
