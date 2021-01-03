@@ -45,6 +45,30 @@ const resolverPlugins = [
   commonjs()
 ];
 
+const devPlugins = production
+  ? []
+  : [
+      dev({
+        port,
+        dirs: [dist],
+        spa: `${dist}/index.html`,
+        basePath: config.base,
+        proxy: {
+          [`${config.api}/*`]: [
+            config.proxyTarget,
+            {
+              https: config.proxyTarget.startsWith("https:"),
+              proxyReqPathResolver: ctx => ctx.url.substring(config.api.length)
+            }
+          ]
+        }
+      }),
+      livereload({
+        watch: dist,
+        verbose: true
+      })
+    ];
+
 const output = {
   interop: false,
   sourcemap: true,
@@ -72,17 +96,7 @@ export default [
         }
       }),
       ...resolverPlugins,
-      !production && livereload(dist),
-      !production &&
-        dev({
-          port,
-          dirs: [dist],
-          spa: `${dist}/index.html`,
-          basePath: config.base,
-          proxy: {
-            [`${config.api}/*`]: [config.proxyTarget, { https: config.proxyTarget.startsWith("https:") }]
-          }
-        })
+      ...devPlugins
     ],
     external,
     watch: {
