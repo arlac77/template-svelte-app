@@ -1,8 +1,8 @@
 {
   "dependencies": {
     "svelte-common": "^4.4.7",
-    "svelte-guard-history-router": "^4.2.9",
-    "svelte-session-manager": "^1.4.4"
+    "svelte-guard-history-router": "^4.2.10",
+    "svelte-session-manager": "^1.4.5"
   },
   "devDependencies": {
     "rollup-plugin-livereload": "^2.0.0"
