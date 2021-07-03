@@ -5,7 +5,7 @@
     "svelte-session-manager": "^1.4.5"
   },
   "devDependencies": {
-    "rollup-plugin-livereload": "^2.0.0"
+    "rollup-plugin-livereload": "^2.0.5"
   },
   "scripts": {
     "prepare": "rollup -c {{rollup.config}}",
