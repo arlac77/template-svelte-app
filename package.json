@@ -32,8 +32,7 @@
       "arlac77/entitlement-provider-frontend",
       "arlac77/hook-ci-frontend-svelte#next",
       "arlac77/npm-navigator",
-      "arlac77/system-dashboard-frontend",
-      "konsumation/konsum-frontend-svelte"
+      "arlac77/system-dashboard-frontend"
     ]
   }
 }
