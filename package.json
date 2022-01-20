@@ -5,11 +5,14 @@
     "svelte-session-manager": "^2.0.10"
   },
   "devDependencies": {
-    "rollup-plugin-livereload": "^2.0.5"
+    "rollup-plugin-livereload": "-",
+    "vite": "^2.7.13",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.34"
   },
   "scripts": {
-    "prepare": "rollup -c {{rollup.config}}",
-    "start": "rollup -c -w {{rollup.config}}"
+    "prepare": "--delete--",
+    "build": "vite build",
+    "start": "vite"
   },
   "config": {
     "api": "/services/{{name}}/api",
@@ -17,22 +20,12 @@
     "title": "Appliction Name"
   },
   "template": {
-    "properties": {
-      "rollup": {
-        "config": ""
-      }
-    },
     "inheritFrom": [
       "arlac77/template-web-app",
       "arlac77/template-svelte"
     ],
     "usedBy": [
-      "arlac77/SymatemExplorer",
-      "arlac77/component-template-designer",
-      "arlac77/entitlement-provider-frontend",
-      "arlac77/hook-ci-frontend-svelte#next",
-      "arlac77/npm-navigator",
-      "arlac77/system-dashboard-frontend"
+      "konsumation/konsum-frontend-svelte"
     ]
   }
 }
