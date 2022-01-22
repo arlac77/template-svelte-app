@@ -6,8 +6,7 @@
   },
   "devDependencies": {
     "rollup-plugin-livereload": "--delete--",
-    "vite": "^2.7.13",
-    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.34"
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.35"
   },
   "scripts": {
     "prepare": "--delete--",
