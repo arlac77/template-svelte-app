@@ -15,12 +15,11 @@
   },
   "config": {
     "api": "/services/{{name}}/api",
-    "proxyTarget": "https://somewhere/",
     "title": "Appliction Name"
   },
   "template": {
     "inheritFrom": [
-      "arlac77/template-web-app",
+      "arlac77/template-web-app#next",
       "arlac77/template-svelte#next"
     ],
     "usedBy": [
