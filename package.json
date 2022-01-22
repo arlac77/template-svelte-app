@@ -5,7 +5,7 @@
     "svelte-session-manager": "^2.0.10"
   },
   "devDependencies": {
-    "rollup-plugin-livereload": "-",
+    "rollup-plugin-livereload": "--delete--",
     "vite": "^2.7.13",
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.34"
   },
@@ -22,7 +22,7 @@
   "template": {
     "inheritFrom": [
       "arlac77/template-web-app",
-      "arlac77/template-svelte"
+      "arlac77/template-svelte#next"
     ],
     "usedBy": [
       "konsumation/konsum-frontend-svelte"
