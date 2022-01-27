@@ -9,8 +9,8 @@
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.35"
   },
   "scripts": {
-    "prepare": "--delete--",
-    "build": "vite build",
+    "build": "--delete--",
+    "prepare": "--overwrite-- vite build",
     "start": "vite"
   },
   "config": {
