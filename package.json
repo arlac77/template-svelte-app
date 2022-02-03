@@ -24,7 +24,7 @@
     	}
     },
     "inheritFrom": [
-      "arlac77/template-web-app#next",
+      "arlac77/template-web-app",
       "arlac77/template-svelte#next"
     ],
     "usedBy": [
