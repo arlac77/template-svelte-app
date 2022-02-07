@@ -1,12 +1,12 @@
 {
   "dependencies": {
-    "svelte-common": "^4.4.15",
-    "svelte-guard-history-router": "^4.5.0",
+    "svelte-common": "^4.4.20",
+    "svelte-guard-history-router": "^4.5.2",
     "svelte-session-manager": "^2.0.10"
   },
   "devDependencies": {
     "rollup-plugin-livereload": "--delete--",
-    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.36"
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.37"
   },
   "scripts": {
     "build": "--delete--",
