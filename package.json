@@ -28,7 +28,8 @@
       "arlac77/template-svelte#next"
     ],
     "usedBy": [
-      "konsumation/konsum-frontend-svelte"
+      "konsumation/konsum-frontend-svelte",
+      "arlac77/npm-navigator"
     ]
   }
 }
