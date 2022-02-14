@@ -19,9 +19,9 @@
   },
   "template": {
     "property": {
-    	"web-app": {
-    		"publish" : "build"
-    	}
+      "web-app": {
+        "publish": "build"
+      }
     },
     "inheritFrom": [
       "arlac77/template-web-app",
