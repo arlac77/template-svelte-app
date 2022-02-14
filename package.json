@@ -29,7 +29,8 @@
     ],
     "usedBy": [
       "konsumation/konsum-frontend-svelte",
-      "arlac77/npm-navigator"
+      "arlac77/npm-navigator",
+      "arlac77/hook-ci-frontend-svelte"
     ]
   }
 }
