@@ -27,10 +27,6 @@
       "arlac77/template-svelte"
     ],
     "usedBy": [
-      "arlac77/SymatemExplorer",
-      "arlac77/component-template-designer",
-      "arlac77/entitlement-provider-frontend",
-      "arlac77/system-dashboard-frontend"
     ]
   }
 }
