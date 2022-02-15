@@ -30,7 +30,10 @@
     "usedBy": [
       "konsumation/konsum-frontend-svelte",
       "arlac77/npm-navigator",
-      "arlac77/hook-ci-frontend-svelte"
+      "arlac77/hook-ci-frontend-svelte",
+      "arlac77/component-template-designer",
+      "arlac77/entitlement-provider-frontend",
+      "arlac77/system-dashboard-frontend"
     ]
   }
 }
