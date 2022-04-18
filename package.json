@@ -13,10 +13,6 @@
     "prepare": "--overwrite-- vite build",
     "start": "vite"
   },
-  "config": {
-    "api": "/services/{{name}}/api",
-    "title": "Appliction Name"
-  },
   "template": {
     "property": {
       "web-app": {
