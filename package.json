@@ -1,17 +1,75 @@
 {
+  "name": "template-svelte-app",
+  "version": "0.0.0-semantic-release",
+  "description": "template for svelte / rollup applications",
+  "keywords": [
+    "web",
+    "svelte",
+    "vite"
+  ],
+  "scripts": {
+    "prepare": "vite build",
+    "start": "vite",
+    "lint": "npm run lint:css",
+    "lint:css": "stylelint ./src/*.css",
+    "dev": "vite",
+    "serve": "vite preview"
+  },
   "dependencies": {
     "svelte-common": "^4.4.20",
     "svelte-guard-history-router": "^4.5.2",
     "svelte-session-manager": "^2.0.10"
   },
   "devDependencies": {
-    "rollup-plugin-livereload": "--delete--",
-    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.42"
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.42",
+    "npm-pkgbuild": "^10.0.3",
+    "semantic-release": "^19.0.2",
+    "stylelint": "^14.8.1",
+    "stylelint-config-standard": "^25.0.0",
+    "svelte": "^3.48.0",
+    "vite": "^2.9.6"
   },
-  "scripts": {
-    "build": "--delete--",
-    "prepare": "--overwrite-- vite build",
-    "start": "vite"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arlac77/template-svelte-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arlac77/template-svelte-app/issues"
+  },
+  "homepage": "https://github.com/arlac77/template-svelte-app#readme",
+  "config": {
+    "base": "/services/{{name}}"
+  },
+  "pkgbuild": {
+    "groups": "web",
+    "content": {
+      "${install.dir}": {
+        "base": "public/"
+      },
+      "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
+    },
+    "install.dir": "/services/{{name}}/frontend/",
+    "hooks": "pkg/hooks.sh",
+    "depends": {
+      "nginx-mainline": ">=1.21.4"
+    }
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/exec",
+        {
+          "publishCmd": "npx npm-pkgbuild --verbose"
+        }
+      ],
+      "@semantic-release/github"
+    ]
   },
   "template": {
     "property": {
