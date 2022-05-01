@@ -6,7 +6,7 @@
   },
   "devDependencies": {
     "rollup-plugin-livereload": "--delete--",
-    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.37"
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.42"
   },
   "scripts": {
     "build": "--delete--",
@@ -23,7 +23,7 @@
       "arlac77/template-web-app",
       "arlac77/template-svelte#next"
     ],
-    "usedBy": [
+    "disabled-usedBy": [
       "konsumation/konsum-frontend-svelte",
       "arlac77/npm-navigator",
       "arlac77/hook-ci-frontend-svelte",
