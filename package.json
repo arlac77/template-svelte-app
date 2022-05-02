@@ -3,9 +3,9 @@
   "version": "0.0.0-semantic-release",
   "description": "template for svelte / rollup applications",
   "keywords": [
-    "web",
     "svelte",
-    "vite"
+    "vite",
+    "web"
   ],
   "scripts": {
     "prepare": "vite build",
@@ -41,21 +41,21 @@
   },
   "homepage": "https://github.com/arlac77/template-svelte-app#readme",
   "config": {
-    "base": "/services/{{name}}"
+    "base": "/services/template-svelte-app"
   },
   "pkgbuild": {
-    "groups": "web",
     "content": {
       "${install.dir}": {
         "base": "public/"
       },
       "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
     },
-    "install.dir": "/services/{{name}}/frontend/",
     "hooks": "pkg/hooks.sh",
+    "groups": "web",
     "depends": {
       "nginx-mainline": ">=1.21.4"
-    }
+    },
+    "install.dir": "/services/template-svelte-app/frontend/"
   },
   "release": {
     "plugins": [
