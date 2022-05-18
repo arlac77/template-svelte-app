@@ -33,16 +33,6 @@
   "config": {
     "base": "/services/template-svelte-app"
   },
-  "pkgbuild": {
-    "content": {
-      "${install.dir}": {
-        "base": "public/"
-      },
-      "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
-    },
-    "hooks": "pkg/hooks.sh",
-    "groups": "web"
-  },
   "template": {
     "property": {
       "web-app": {
