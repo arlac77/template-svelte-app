@@ -1,8 +1,35 @@
 {
+  "name": "template-svelte-app",
+  "version": "0.0.0-semantic-release",
+  "description": "template for svelte / rollup applications",
+  "keywords": [
+    "web",
+    "svelte",
+    "vite"
+  ],
+  "scripts": {
+    "lint": "npm run lint:css",
+    "lint:css": "stylelint ./src/*.css",
+    "prepare": "vite build",
+    "dev": "vite",
+    "serve": "vite preview"
+  },
   "dependencies": {
     "svelte-common": "^4.4.20",
     "svelte-guard-history-router": "^4.5.2",
     "svelte-session-manager": "^2.0.10"
+  },
+  "devDependencies": {
+    "stylelint": "^14.8.2",
+    "stylelint-config-standard": "^25.0.0",
+    "npm-pkgbuild": "^10.7.6",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "semantic-release": "^19.0.2",
+    "svelte": "^3.48.0",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.44",
+    "vite": "^2.9.9"
   },
   "repository": {
     "type": "git",
@@ -12,6 +39,34 @@
     "url": "https://github.com/arlac77/template-svelte-app/issues"
   },
   "homepage": "https://github.com/arlac77/template-svelte-app#readme",
+  "pkgbuild": {
+    "groups": "web",
+    "content": {
+      "${install.dir}": {
+        "base": "public/"
+      },
+      "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
+    },
+    "install.dir": "/services/{{name}}/frontend/",
+    "hooks": "pkg/hooks.sh",
+    "depends": {
+      "nginx-mainline": ">=1.21.4"
+    }
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/exec",
+        {
+          "publishCmd": "npx npm-pkgbuild --available --verbose"
+        }
+      ],
+      "@semantic-release/github"
+    ]
+  },
   "template": {
     "property": {
       "web-app": {
