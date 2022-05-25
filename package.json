@@ -1,71 +1,18 @@
 {
-  "name": "template-svelte-app",
-  "version": "0.0.0-semantic-release",
-  "description": "template for svelte / rollup applications",
-  "keywords": [
-    "svelte",
-    "vite",
-    "web"
-  ],
-  "scripts": {
-    "prepare": "vite build",
-    "lint": "npm run lint:css",
-    "lint:css": "stylelint ./src/*.css",
-    "dev": "vite",
-    "serve": "vite preview"
-  },
   "dependencies": {
     "svelte-common": "^4.4.20",
     "svelte-guard-history-router": "^4.5.2",
     "svelte-session-manager": "^2.0.10"
   },
   "devDependencies": {
-    "@semantic-release/commit-analyzer": "^9.0.2",
-    "@semantic-release/exec": "^6.0.3",
-    "@semantic-release/release-notes-generator": "^10.0.3",
-    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.44",
-    "npm-pkgbuild": "^10.7.6",
-    "semantic-release": "^19.0.2",
-    "stylelint": "^14.8.4",
-    "stylelint-config-standard": "^25.0.0",
-    "svelte": "^3.48.0",
-    "vite": "^2.9.9"
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.44"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/arlac77/template-svelte-app.git"
-  },
-  "bugs": {
-    "url": "https://github.com/arlac77/template-svelte-app/issues"
-  },
-  "homepage": "https://github.com/arlac77/template-svelte-app#readme",
   "pkgbuild": {
     "content": {
       "${install.dir}": {
-        "base": "public/"
-      },
-      "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
-    },
-    "hooks": "pkg/hooks.sh",
-    "groups": "web",
-    "depends": {
-      "nginx-mainline": ">=1.21.4"
-    },
-    "install.dir": "/services/template-svelte-app/frontend/"
-  },
-  "release": {
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/npm",
-      [
-        "@semantic-release/exec",
-        {
-          "publishCmd": "npx npm-pkgbuild --available --verbose"
-        }
-      ],
-      "@semantic-release/github"
-    ]
+        "base": "build"
+      }
+    }
   },
   "template": {
     "property": {
@@ -75,7 +22,8 @@
     },
     "inheritFrom": [
       "arlac77/template-web-app",
-      "arlac77/template-svelte#next"
+      "arlac77/template-svelte#next",
+      "arlac77/template-vite"
     ]
   }
 }
