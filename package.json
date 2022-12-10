@@ -4,9 +4,6 @@
     "svelte-guard-history-router": "^4.5.2",
     "svelte-session-manager": "^2.0.10"
   },
-  "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^2.0.0"
-  },
   "template": {
     "property": {
       "web-app": {
