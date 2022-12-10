@@ -19,8 +19,8 @@
     ],
     "inheritFrom": [
       "arlac77/template-web-app",
-      "arlac77/template-vite",
-      "arlac77/template-svelte"
+      "arlac77/template-svelte",
+      "arlac77/template-vite"
     ]
   }
 }
