@@ -1,31 +1,25 @@
 {
   "dependencies": {
-    "svelte-common": "^4.21.1",
-    "svelte-guard-history-router": "^5.5.13",
-    "svelte-session-manager": "^2.0.11"
+    "svelte-common": "^4.4.20",
+    "svelte-guard-history-router": "^4.5.2",
+    "svelte-session-manager": "^2.0.10"
   },
   "devDependencies": {
-    "rollup-plugin-livereload": "^2.0.5"
-  },
-  "scripts": {
-    "prepare": "rollup -c {{rollup.config}}",
-    "start": "rollup -c -w {{rollup.config}}"
-  },
-  "config": {
-    "api": "/services/{{name}}/api",
-    "proxyTarget": "https://somewhere/",
-    "title": "Appliction Name"
+    "@sveltejs/vite-plugin-svelte": "^2.0.0"
   },
   "template": {
-    "properties": {
-      "rollup": {
-        "config": ""
+    "property": {
+      "web-app": {
+        "publish": "build"
       }
     },
+    "usedBy": [
+      "arlac77/entitlement-provider-frontend",
+      "konsumation/konsum-frontend-svelte"
+    ],
     "inheritFrom": [
       "arlac77/template-web-app",
       "arlac77/template-svelte"
-    ],
-    "usedBy": []
+    ]
   }
 }
