@@ -14,6 +14,7 @@
       }
     },
     "usedBy": [
+      "arlac77/entitlement-provider-frontend",
       "konsumation/konsum-frontend-svelte"
     ],
     "inheritFrom": [
