@@ -11,7 +11,7 @@
       }
     },
     "usedBy": [
-      "konsumation/konsum-frontend-svelte"
+      "konsumation/frontend-svelte"
     ],
     "inheritFrom": [
       "arlac77/template-web-app",
