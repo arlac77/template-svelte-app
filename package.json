@@ -2,7 +2,7 @@
   "dependencies": {
     "svelte-common": "^6.15.27",
     "svelte-guard-history-router": "^6.1.2",
-    "svelte-session-manager": "^3.0.9"
+    "svelte-session-manager": "^3.0.10"
   },
   "template": {
     "property": {
