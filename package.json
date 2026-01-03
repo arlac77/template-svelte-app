@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "svelte-common": "^6.19.48",
+    "svelte-common": "^6.19.49",
     "svelte-guard-history-router": "^7.0.7",
     "svelte-session-manager": "^3.0.72"
   },
